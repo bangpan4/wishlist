@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{item.item}}</title>
+</head>
+<body>
+    <a href="/dashboard">Home</a>
+    <a href="/logout">Logout</a>
+    <h1>{{item.item}}</h1>
+    <p>Users who added this product/item under their wish list:</p>
+    {% for user in users%}
+        <p>{{user.creator.name}}</p>
+    {% endfor %}
+
+</body>
+</html>
